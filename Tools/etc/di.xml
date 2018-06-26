@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        <type name="Magento\Framework\Console\CommandList">
+            <arguments>
+                <argument name="commands" xsi:type="array">
+                    <item name="delete_generation" xsi:type="object">Swadeshswain\Tools\Console\Command\Generation</item>
+					<item name="delete_report" xsi:type="object">Swadeshswain\Tools\Console\Command\Report</item>
+					<item name="delete_systemlog" xsi:type="object">Swadeshswain\Tools\Console\Command\Systemlog</item>
+					<item name="setup_all" xsi:type="object">Swadeshswain\Tools\Console\Command\Allsetup</item>
+					<item name="all_command" xsi:type="object">Swadeshswain\Tools\Console\Command\Swadeshlist</item>
+                </argument>
+            </arguments>
+        </type>
+    </config>
